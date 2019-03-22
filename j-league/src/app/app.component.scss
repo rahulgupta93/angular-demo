@@ -1,0 +1,15 @@
+app-nav {
+    min-width: 100px;
+    width: 15%;
+    height: 100vh;
+    background-color: var(--primary-color);
+    color: var(--white);
+    position: fixed;
+    overflow: auto;
+    box-shadow: #607d8b 1px 0px 15px 3px;
+}
+
+.main-container {
+    margin-left: 15%;
+    padding: 2rem 3rem;
+}

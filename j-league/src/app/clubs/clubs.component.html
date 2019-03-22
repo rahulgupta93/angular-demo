@@ -1,0 +1,9 @@
+<h2>All Clubs</h2>
+<ul>
+    <li *ngFor="let club of clubs" >
+        <div>{{club.id + ': ' + club.name}}</div>
+        <div>
+            <span *ngFor="let member of club.members">{{member}}</span>
+        </div>
+    </li>
+</ul>

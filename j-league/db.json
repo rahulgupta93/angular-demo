@@ -1,0 +1,28 @@
+{
+  "clubs": [
+    {
+      "id": 1,
+      "name": "Cremer",
+      "members": [
+        "Roley",
+        "Brian",
+        "Pepe"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Polack",
+      "members": ["David", "Roland", "Kelton"]
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

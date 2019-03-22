@@ -1,0 +1,8 @@
+<nav class="app-nav">
+    <a class="app-logo" routerLink="/home">
+        <img src="assets/images/JLeague-logo.png" />
+    </a>
+    <a *ngFor="let item of navItems" routerLink="{{item.url}}" class="nav-item">
+        {{item.name}}
+    </a>
+</nav>
