@@ -2,6 +2,15 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
 
+
+###### To DO ######
+
+1) Use Intersection Observer API to lazy load images and content (something like webnovel). (Use picsum photos list to get random photos)
+
+2) Use node to create a basic web server and APIs to get lazy loaded content.
+
+3) Create a Web Api for CRUD operations on players.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
