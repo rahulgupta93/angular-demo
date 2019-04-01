@@ -1,14 +1,17 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+
+import { navigationPath } from './nav/navigation.constants';
+
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ClubsComponent } from './clubs/clubs.component';
 
 const routes: Routes = [{
-  path: 'home', redirectTo: '/'
+  path: '/', redirectTo: '/home'
 }, {
-  path: 'clubs', component: ClubsComponent
+  path: navigationPath.clubs, component: ClubsComponent
 }, {
-  path: 'about', component: DashboardComponent
+  path: navigationPath.about, component: DashboardComponent
 }];
 
 @NgModule({

@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+
+import { navigationData } from './navigation.constants';
+import { NavigationItem } from './navigation.type';
 
 
 @Component({
@@ -10,36 +13,10 @@ export class NavComponent implements OnInit {
 
     navItems: {}[];
 
+    @Output() routeChange = new EventEmitter<NavigationItem>();
+
     ngOnInit() {
-        this.navItems = [{
-            name: 'Home',
-            url: '/home',
-            iconPath: ''
-        }, {
-            name: 'Clubs',
-            url: '/clubs',
-            iconPath: ''
-        }, {
-            name: 'Matches',
-            url: '/matches',
-            iconPath: ''
-        }, {
-            name: 'Schedule',
-            url: '/schedule',
-            iconPath: ''
-        }, {
-            name: 'History',
-            url: '/history',
-            iconPath: ''
-        }, {
-            name: 'About',
-            url: '/about',
-            iconPath: ''
-        }, {
-            name: 'Store',
-            url: '/store',
-            iconPath: ''
-        }];
+        this.navItems = navigationData;
     }
 
 }
